@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChannelSync Email</title>
+    <style>
+        /* Define your styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #333;
+            margin-top: 0;
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Hello from ChannelSync!</h3>
+        <h4>Dear {{name}},</h4>
+        <p><b>This is an important update from {{channel_name}}</b></p>
+        <p>{{message}}</p>
+        <p>Stay tuned!</p>
+        <p>
+            <a href="#" class="button">Read More</a>
+        </p>
+        <p>Best regards,<br>Team ChannelSync</p>
+    </div>
+</body>
+</html>
